@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#AE7D7D">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_event" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarBackgroundColor="#630B0A"
+        app:compactCalendarCurrentDayBackgroundColor="#470808"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#E61D1D"
+        app:compactCalendarMultiEventIndicatorColor="#A37B7B"
+        app:compactCalendarTargetHeight="400dp"
+        app:compactCalendarTextColor="#D1B0B0"
+        app:compactCalendarTextSize="17sp" />
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="-2dp">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbDangXuatEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/icondangxuat"
+                app:backgroundTint="#FF0000"
+                app:fabSize="mini" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbHomeEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_home"
+                app:backgroundTint="#00BCD4"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="#E1281A"
+                app:fabSize="normal" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

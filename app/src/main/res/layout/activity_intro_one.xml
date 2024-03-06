@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introActivity.IntroOneActivity"
+    android:background="@drawable/brcolor">
+
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-74dp"
+        android:layout_marginBottom="-93dp"
+        android:gravity="start"
+        android:shadowColor="#084951"
+        android:shadowDx="-1"
+        android:shadowDy="-5"
+        android:shadowRadius="15"
+        android:text="Quản Lý Sinh Viên"
+        android:textAlignment="textStart"
+        android:textColor="#020723"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="250dp"
+        android:outlineAmbientShadowColor="#C33030"
+        android:src="@drawable/student" />
+
+    <ImageView
+        android:id="@+id/imgOngVnag"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="486dp"
+        android:src="@drawable/logohf1" />
+</RelativeLayout>
